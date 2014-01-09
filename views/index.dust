@@ -1,0 +1,9 @@
+{>layout/}
+{<content}
+    <p>This is loaded from a partial.</p>
+    {#user}
+        <a href="/logout">Logout</a>
+    {:else}
+        <a href="/login">Login</a>
+    {/user}
+{/content}
