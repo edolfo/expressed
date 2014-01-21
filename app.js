@@ -12,7 +12,7 @@ var express = require('express'),
 	passport = require('passport');
 
 // Our own modules
-var config = require('./config/development.conf.js'),
+var config = require('./config/conf.js').development,
 	db = require('./lib/db');
 
 // Make app global

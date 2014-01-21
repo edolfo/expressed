@@ -17,6 +17,18 @@ module.exports = function(grunt){
                     cwd: __dirname
                 }
             }
+        },
+        karma: {
+            unit: { configFile: 'tests/config/karma.unit.conf.js' },
+            e2e: { configFile: 'tests/config/karma.e2e.conf.js' }
+        },
+        mochaTest: {
+            test: {
+                options: {
+                    reporter: 'nyan'
+                },
+                src: ['tests/server/**/*.js']
+            }
         }
     });
 
